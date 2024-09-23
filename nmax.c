@@ -2,13 +2,23 @@
 
 int main()
 {
-    int a[5] = {2,5,10,15,12};
-    int max =0;
-    /*for (int index = 0; index < 5; index++)
+    
+    int max =0 ,num=0 , n;
+    
+    printf("Enter qunatity of number :");
+    scanf("%d",&n);
+
+    for (int i = 1; i <= n; i++)
     {
-         max < a[index]? max = a[index]: max;
-    }*/
-        printf("%d" , max);
+        printf("Enter a number : ");
+        scanf("%d",&num);
+        if ( max < num )
+        {
+            max = num;
+        }
+        
+    }
+    printf("max number : %d",max);
     
     
     return 0;
