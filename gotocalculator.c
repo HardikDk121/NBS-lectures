@@ -34,6 +34,7 @@ int main()
         {
             result = number / result;
         }
+ 
     printf("%d \n" , result);
 
     goto start;
