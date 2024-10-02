@@ -1,17 +1,18 @@
 #include <stdio.h>
-
+#include <string.h>
 int main()
 {
     char string[5] , revstring[5];
-    for (int i = 5;i >= 0; i--)
-    {
-
-        for (int j = 0; j <5 ; j++ )
-        {
-                
-        }
-        
-    }
+   
+    printf("Enter a string :");
+    scanf("%s",string);
     
+    int len = strlen(string);
+    for (int i = 0; i < len; i++)
+    {
+        revstring[i] = string[len - i - 1 ];      
+    }
+    revstring[len] = '\0';
+    printf("%s",revstring);
     return 0;
 }
