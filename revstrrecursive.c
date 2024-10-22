@@ -3,14 +3,14 @@
 
 void revstr(char* string)
 {
-   static int index = 0;
+   //static int index = 0;
    if (*string == '\0')
    {
-        goto exit;
+        return;
    }  
-   revstr(string + index + 1);
+   revstr( string +  1);
    printf("%c",*string);
-   exit :     
+        
 }
 
 int main()
